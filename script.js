@@ -20,3 +20,20 @@ function calcular() {
 }
 
 <script src="script.js"></script>
+
+function calcular() {
+
+    let consumidos = Number(document.getElementById("consumidos").value);
+    let reciclados = Number(document.getElementById("reciclados").value);
+
+    if (consumidos <= 0) {
+        document.getElementById("resultado").innerHTML =
+        "Digite um valor válido.";
+        return;
+    }
+
+    let indice = (reciclados / consumidos) * 100;
+
+    document.getElementById("resultado").innerHTML =
+        "Índice de Sustentabilidade: " + indice.toFixed(2) + "%";
+}
