@@ -1,0 +1,323 @@
+Um Mundo Melhor Na Sustentabilidade 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustentabilidade</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #2e8b57;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 10px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sustentabilidade</h1>
+    <p>Cuidando do presente para garantir o futuro.</p>
+</header>
+
+<main>
+
+<section>
+    <h2>O que é Sustentabilidade?</h2>
+    <p>
+        Sustentabilidade é a utilização consciente dos recursos naturais,
+        buscando preservar o meio ambiente para as futuras gerações.
+    </p>
+</section>
+
+<section>
+    <h2>Como calcular a sustentabilidade?</h2>
+    <p>
+        Um cálculo simples pode ser feito utilizando:
+    </p>
+
+    <p>
+        <strong>Índice = (Recursos Reciclados ÷ Recursos Consumidos) × 100</strong>
+    </p>
+
+    <label>Recursos Consumidos (kg):</label><br>
+    <input type="number" id="consumidos"><br>
+
+    <label>Recursos Reciclados (kg):</label><br>
+    <input type="number" id="reciclados"><br>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+</section>
+
+</main>
+
+<script>
+function calcular() {
+    let consumidos = Number(document.getElementById("consumidos").value);
+    let reciclados = Number(document.getElementById("reciclados").value);
+
+    if (consumidos <= 0) {
+        document.getElementById("resultado").innerHTML =
+        "Digite um valor válido.";
+        return;
+    }
+
+    let indice = (reciclados / consumidos) * 100;
+
+    document.getElementById("resultado").innerHTML =
+    "Índice de Sustentabilidade: " + indice.toFixed(2) + "%";
+}
+</script>
+
+</body>
+</html>
+Exemplo de uso:
+
+Recursos consumidos: 100 kg
+
+Recursos reciclados: 80 kg
+
+Resultado: 80% de sustentabilidade.
+
+
+Nome do meu site e Um Mundo Melhor Na Sustentabilidade 
+
+Você pode colocar o nome do site assim:
+
+<title>Um Mundo Melhor na Sustentabilidade</title>
+
+<header>
+    <h1>Um Mundo Melhor na Sustentabilidade</h1>
+    <p>Cuidando do planeta hoje para garantir um futuro melhor amanhã.</p>
+</header>
+Ou, se quiser uma apresentação mais completa:
+
+<header>
+    <h1>🌱 Um Mundo Melhor na Sustentabilidade 🌱</h1>
+    <p>
+        Conheça a importância da sustentabilidade, seus benefícios
+        e como podemos calcular práticas sustentáveis no dia a dia.
+    </p>
+</header>
+Esse título é ótimo para um trabalho escolar porque já mostra claramente o tema do site.
+
+
+Faça códigos do projeto inteiro com esse título Um Mundo Melhor Na Sustentabilidade 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Mundo Melhor na Sustentabilidade</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: #246b45;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #2e8b57;
+        }
+
+        input {
+            padding: 8px;
+            width: 200px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #246b45;
+        }
+
+        #resultado {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌱 Um Mundo Melhor na Sustentabilidade 🌱</h1>
+    <p>Cuidando do planeta hoje para garantir um futuro melhor amanhã.</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#beneficios">Benefícios</a>
+    <a href="#calculo">Cálculo</a>
+</nav>
+
+<section id="sobre">
+    <h2>O que é Sustentabilidade?</h2>
+
+    <p>
+        Sustentabilidade é a utilização consciente dos recursos naturais,
+        buscando preservar o meio ambiente e garantir qualidade de vida
+        para as futuras gerações.
+    </p>
+
+    <p>
+        Pequenas atitudes como reciclar, economizar água e reduzir o
+        desperdício ajudam a construir um mundo melhor.
+    </p>
+</section>
+
+<section id="beneficios">
+    <h2>Benefícios da Sustentabilidade</h2>
+
+    <ul>
+        <li>Redução da poluição.</li>
+        <li>Preservação dos recursos naturais.</li>
+        <li>Melhoria da qualidade de vida.</li>
+        <li>Economia de energia e água.</li>
+        <li>Proteção da fauna e da flora.</li>
+    </ul>
+</section>
+
+<section id="calculo">
+    <h2>Calculadora de Sustentabilidade</h2>
+
+    <p>
+        Fórmula:
+        <strong>
+            (Recursos Reciclados ÷ Recursos Consumidos) × 100
+        </strong>
+    </p>
+
+    <label>Recursos Consumidos (kg):</label><br>
+    <input type="number" id="consumidos"><br><br>
+
+    <label>Recursos Reciclados (kg):</label><br>
+    <input type="number" id="reciclados"><br><br>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+</section>
+
+<footer>
+    <p>Projeto Escolar - Um Mundo Melhor na Sustentabilidade © 2026</p>
+</footer>
+
+<script>
+function calcular() {
+
+    let consumidos =
+        Number(document.getElementById("consumidos").value);
+
+    let reciclados =
+        Number(document.getElementById("reciclados").value);
+
+    if (consumidos <= 0) {
+        document.getElementById("resultado").innerHTML =
+        "Digite valores válidos.";
+        return;
+    }
+
+    let indice =
+        (reciclados / consumidos) * 100;
+
+    document.getElementById("resultado").innerHTML =
+        "Índice de Sustentabilidade: " +
+        indice.toFixed(2) + "%";
+}
+</script>
+
+</body>
+</html>
