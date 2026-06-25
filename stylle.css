@@ -1,3 +1,7 @@
+/* =========================
+   ESTILO GERAL
+========================= */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,48 +9,10 @@ body {
     color: #333;
 }
 
-    let consumidos =
-        Number(document.getElementById("consumidos").value);
+/* =========================
+   CABEÇALHO
+========================= */
 
-    let reciclados =
-        Number(document.getElementById("reciclados").value);
-
-    if (consumidos <= 0 || isNaN(consumidos)) {
-        document.getElementById("resultado").innerHTML =
-        "Digite um valor válido para recursos consumidos.";
-        return;
-    }
-
-    let indice = (reciclados / consumidos) * 100;
-
-    document.getElementById("resultado").innerHTML =
-        "Índice de Sustentabilidade: " +
-        indice.toFixed(2) + "%";
-}
-E no final do arquivo HTML, antes de </body>, coloque:
-
-<script src="script.js"></script>
-Assim o projeto fica organizado em:
-
-index.html → estrutura do site
-
-style.css → aparência do site (opcional)
-
-script.js → cálculo da sustentabilidade.
-
-
-Stylle.css 
-
-
-/* Estilo geral */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f0f8f0;
-    color: #333;
-}
-
-/* Cabeçalho */
 header {
     background-color: #2e8b57;
     color: white;
@@ -54,17 +20,28 @@ header {
     padding: 30px;
 }
 
-/* Menu */
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* =========================
+   MENU
+========================= */
+
 nav {
     background-color: #246b45;
-    padding: 10px;
     text-align: center;
+    padding: 12px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 15px;
+    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -72,7 +49,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Seções */
+/* =========================
+   SEÇÕES
+========================= */
+
 section {
     background-color: white;
     margin: 20px;
@@ -80,19 +60,41 @@ section {
     border-radius: 10px;
 }
 
-/* Títulos */
+/* =========================
+   TÍTULOS
+========================= */
+
 h2 {
     color: #2e8b57;
 }
 
-/* Campos */
-input {
-    width: 200px;
-    padding: 8px;
-    margin: 5px 0;
+/* =========================
+   LISTAS
+========================= */
+
+ul {
+    padding-left: 20px;
 }
 
-/* Botão */
+li {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   CAMPOS DE TEXTO
+========================= */
+
+input {
+    width: 220px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
 button {
     background-color: #2e8b57;
     color: white;
@@ -106,25 +108,32 @@ button:hover {
     background-color: #246b45;
 }
 
-/* Resultado */
+/* =========================
+   RESULTADO DA CALCULADORA
+========================= */
+
 #resultado {
     margin-top: 15px;
     font-weight: bold;
     color: #2e8b57;
 }
 
-/* Rodapé */
+/* =========================
+   OBJETIVO DO PROJETO
+========================= */
+
+#objetivo {
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e8b57;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
 footer {
     background-color: #2e8b57;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
-}
-
-<link rel="stylesheet" href="style.css">
-
-objetivo {
-    background-color: #e8f5e9;
-    border-left: 5px solid #2e8b57;
-}
+    }
