@@ -338,19 +338,12 @@ function calcular() {
     </p>
 </section>
 
-function calcular() {
+<label>Recursos Consumidos (kg):</label>
+<input type="number" id="consumidos">
 
-    let consumidos = Number(document.getElementById("consumidos").value);
-    let reciclados = Number(document.getElementById("reciclados").value);
+<label>Recursos Reciclados (kg):</label>
+<input type="number" id="reciclados">
 
-    if (consumidos <= 0) {
-        document.getElementById("resultado").innerHTML =
-        "Digite um valor válido.";
-        return;
-    }
+<button onclick="calcular()">Calcular</button>
 
-    let indice = (reciclados / consumidos) * 100;
-
-    document.getElementById("resultado").innerHTML =
-        "Índice de Sustentabilidade: " + indice.toFixed(2) + "%";
-}
+<p id="resultado"></p>
